@@ -4,7 +4,27 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Projeto Screen Match ");
+
+        System.out.println("Filme: Top Gun - Maverick");
+
+        int anoDeLancamento = 2022;
+        System.out.println("Ano de lançamento: " + anoDeLancamento);
+
+        boolean incluidoNoPlano = true;
+        double notaDoFilme = 8.9;
+
+        //Média calculada nas 3 notas;
+        double media = (9.9 + 6.3 + 8.1) / 3;
+        System.out.println("Nota média: " + media);
+
+        String sinopse;
+        sinopse = """
+                Filme Top Gun
+                Filme de aventura com Tom Cruise
+                Ano de lançamento em
+                """ + anoDeLancamento;
+        System.out.println(sinopse);
 
         for (int i = 1; i <= 5; i++) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
