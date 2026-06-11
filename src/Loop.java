@@ -5,12 +5,16 @@ public class Loop {
         Scanner leitura = new Scanner(System.in);
         double mediaAvaliação = 0;
         double nota = 0;
+        int numeroDeNotas = 0;
 
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Digite a sua nota para o filme: ");
+        while (nota != -1) {
+            System.out.println("Digite a sua nota para o filme ou -1 para encerrar: ");
             nota = leitura.nextDouble();
-            mediaAvaliação += nota;
+            if (nota != -1) {
+                mediaAvaliação += nota;
+                numeroDeNotas++;
+            }
         }
-        System.out.println("A media das avaliações é de: " + mediaAvaliação/3);
+        System.out.println("A media das avaliações é de: " + mediaAvaliação/numeroDeNotas);
     }
 }
