@@ -26,6 +26,12 @@ public class Main {
                 """ + anoDeLancamento;
         System.out.println(sinopse);
 
+        //Convertendo valores
+        int classificacao;
+        classificacao = (int) (media/2);
+        System.out.println("Classificação de " + classificacao);
+
+
         for (int i = 1; i <= 5; i++) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
