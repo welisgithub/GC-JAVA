@@ -14,6 +14,8 @@ public class DesafioCurso1 {
         String tipoDeConta = "Corrente";
         double saldo = 2000.00;
         int resposta = 0;
+        double sacar = 0;
+        double depositar = 0;
 
         System.out.println("*******************************************");
         System.out.println("Bem vindo! Segue as informações do cliente: ");
@@ -40,9 +42,20 @@ public class DesafioCurso1 {
                     break;
                 case(2):
                     System.out.println("Quanto você deseja sacar?");
-                    break;
+                    sacar = l.nextDouble();
+                    if (sacar > saldo){
+                        System.out.println("Saldo insuficiente.");
+                        break;
+                    }else {
+                        saldo -= sacar;
+                        System.out.println("Saldo restante de R$" + saldo);
+                        break;
+                    }
                 case(3):
                     System.out.println("Quanto você deseja depositar?");
+                    depositar = l.nextDouble();
+                    saldo += depositar;
+                    System.out.println("Saldo restante de R$" + saldo);
                     break;
                 case(4):
                     System.out.println("Atendimento encerrado.");
